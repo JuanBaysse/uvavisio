@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>WEB AGENCY</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/c85578ddc9.js" crossorigin="anonymous"></script>
+  <script src="//code.tidio.co/ocwitn0rjhyw7ycengeapyd1hpyewg3e.js" async></script>
+</head>
+
+<body>
+  <section class="navbar">
+    <div class="container">
+      <div class="content">
+        <div class="brand">
+          <img src="image/logo.png" alt="UVA VISION Logo">
+          <h2>VISION</h2>
+        </div>
+        <nav>
+          <ul id="menuitem">
+            <li><a href="#about">About Us</a></li>
+            <li><a  href="#service">Services</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+      <div class="home flex">
+        <div class="left">
+          <h1>WE HELP GROW <br>
+            YOUR CONTENT</h1>
+          <p>video agency that goes beyond just video editing. We are here to take your vision to new heights and help you flourish in the digital realm. At UVA VISION, we specialize in crafting captivating videos that not only tell your story but also engage and resonate with your audience.</p>
+          <a  class="btn" href="#calendlyWidget" onclick="toggleCalendlyWidget()">View More</a>
+        </div>
+        <div class="right">
+          <img src="image/home.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section id="service" class="service top center padding service2">
+    <div class="container">
+      <h1>Our Services</h1>
+      <div class="items grid">
+        <div class="box">
+          <img src="image/img1.png" />
+          <h3>WINTER PLAN</h3>
+          <br>
+          <ul>
+            <li><img src="image/tilde.png" />Video Editing  </li>
+            <li><img src="image/x.png" />Cover Design </li>
+            <li> <img src="image/x.png" />Audience Management </li>
+            <li> <img src="image/x.png" />Creative Ideas</li>
+          </ul>
+        </div>
+        <div class="box">
+          <img src="image/img2.png" />
+          <h3>FALL PLAN</h3>
+          <br>
+          <ul>
+            <li><img src="image/tilde.png" />Video Editing  </li>
+            <li><img src="image/tilde.png" />Cover Design </li>
+            <li> <img src="image/x.png" />Audience Management </li>
+            <li> <img src="image/x.png" />Creative Ideas</li>
+          </ul>
+        </div>
+        <div class="box">
+          <img src="image/img3.png" />
+          <h3>SUMMER PLAN</h3>
+          <br>
+          <ul>
+            <li><img src="image/tilde.png" />Video Editing  </li>
+            <li><img src="image/tilde.png" />Cover Design </li>
+            <li> <img src="image/tilde.png" />Audience Management </li>
+            <li> <img src="image/x.png" />Creative Ideas</li>
+          </ul>
+        </div>
+        <div class="box">
+          <img src="image/img4.png" />
+          <h3>SPRING PLAN</h3>
+          <br>
+          <ul>
+            <li><img src="image/tilde.png" />Video Editing  </li>
+            <li><img src="image/tilde.png" />Cover Design </li>
+            <li> <img src="image/tilde.png" />Audience Management</li>
+            <li> <img src="image/tilde.png" />Creative Ideas</li>
+          </ul>
+          <br>
+        </div>
+      </div>
+      <p>Ready to take your business to new heights? Choose a plan and start your journey now. Our team will generate leads, build your brand, and drive traffic to boost your business.</p>
+          <a  class="btn" href="#calendlyWidget" onclick="toggleCalendlyWidget()">START NOW</a>
+      <br>
+      <br>
+      <!-- Div oculto inicialmente -->
+      <div id="calendlyWidget" class="calendly-inline-widget" data-url="https://calendly.com/juanbaysse/uvavision?hide_gdpr_banner=1" style="display: none; min-width: 320px; height: 630px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+      
+      <script>
+        function toggleCalendlyWidget() {
+          var calendlyWidget = document.getElementById('calendlyWidget');
+          if (calendlyWidget.style.display === 'none') {
+            calendlyWidget.style.display = 'block';
+          }
+        }
+      </script>
+
+    </div>
+  </section>
+  <section id="about" class="wraper2 top">
+    <div class="container flex">
+      <div class="left mtop">
+        <h2>Unveiling the Essence  <br> of UVA VISION</h2>
+        <p>At UVA VISION, we are much more than a video agency in Jujuy, Argentina. We are a family of passionate audiovisual creators aiming to make a difference in the world of video editing and content production.</p>
+        <a href="#team" class="btn">Our Team</a>
+      </div>
+      <div class="right">
+        <img src="image/uvaa.png" alt="" style="height: auto;">
+      </div>
+    </div>
+  </section>
+
+
+  <section id="why" class="service top center padding service2">
+    <h1>Why Choose Us</h1>
+    <div class="items grid">
+      <div class="box">
+        <img src="https://img.icons8.com/wired/64/ffffff/marketing.png" />
+        <h3>UNLIMITED REACH</h3>
+        <p>With us, your reach will know no bounds. Our video agency offers creative solutions that can take your message to global audiences.</p>
+      </div>
+      <div class="box">
+        <img src="image/img9.png" />
+        <h3>TIME SAVINGS</h3>
+        <p>We understand how valuable your time is. By choosing us, we take care of the entire video editing and production process, allowing you to focus on other important aspects of your business. </p>
+      </div>
+      <div class="box">
+        <img src="image/img6.png" />
+        <h3>QUALITY OFFERING</h3>
+        <p>Quality is our top priority. We have a team of video editing and production experts who strive to deliver impeccable results. </p>
+      </div>
+      <div class="box">
+        <img src="image/img7.png" />
+        <h3>INNOVATE IDEAS</h3>
+        <p>Our team is filled with creative and passionate minds who constantly generate new ideas to make your content stand out.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="contact" class="contact top">
+    <div class="container">
+      <div class="content flex">
+        <div class="left">
+          <form action="https://formsubmit.co/38ad21fba193e4830db83570282d26af" method="POST" >
+            <h1>Contact Us</h1>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="text" name="phone" placeholder="Phone Number">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" rows="5" cols="80">Message</textarea>
+            <button type="submit" class="btn" value="Enviar">SEND</button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+        </div>
+        <div class="right">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.036667732067!2d-65.3017575!3d-24.1857864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1626973709330!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>        
+      </div>
+    </div>
+</section>
+
+  <section id="team"  class="cutsomer top">
+    <div class="container">
+      <h1 class="center">Our Team</h1>
+      <div class="itme grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/c1.jpg" alt="">
+          </div>
+          <div class="text">
+            <p> is our talented and meticulous video editor, with a passion for bringing stories to life through captivating visuals.</p>
+            <h3>Ander Alex</h3>
+            <span>Santiago,Chile</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/c2.png" alt="">
+          </div>
+          <div class="text">
+            <p>is our talented and Head of Video Editing, is the heart and soul of our agency. With an innate passion for video editing</p>
+            <h3>Baysse Juan</h3>
+            <span>Argentina,Jujuy</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/c3.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>is our talented and dedicated Video Editor, Jose, is an essential part of our creative team. With years of experience in video editing</p>
+            <h3>Fernandez Jose Manuel </h3>
+            <span>Argentina,Jujuy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container top grid">
+      <div class="box">
+        <h2>Address</h2>
+        <i class="fa fa-map"></i>
+        <label>Argentina,Jujuy</label><br>
+        <i class="fa fa-phone"></i>
+        <label>Call +54 38644573</label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>juanbaysse@UvaVision.com</label><br>
+      </div>
+      <div class="box">
+        <h2>Info</h2>
+        <p>We take pride in offering creative and professional solutions in the world of video editing and content production.</p>
+      </div>
+      <div class="box">
+        <h2>Links</h2>
+        <span><i class="fa-brands fa-tiktok" style="color: #fafafa;"></i>&nbspTiktok</span>
+        <br>
+        <span><i class="fa-brands fa-instagram" style="color: #fafafa;"></i>&nbspInstagram</span>
+        <br>
+        <span><i class="fa-brands fa-linkedin" style="color: #fafafa;"></i>&nbspLinkedin</span>
+      </div>
+      <div class="box">
+        <h2>Subscribe</h2>
+        <form action="https://formsubmit.co/38ad21fba193e4830db83570282d26af" method="POST" >
+        <input type="email" name="email" placeholder="Enter Your Email">
+        <input type="submit" class="btn" placeholder="SEND">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+        <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2023 Copyright UVA Vision All Rights Reserved  </p>
+  </footer>
+</body>
+
+</html>
